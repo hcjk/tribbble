@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    transition: all .3s ease;
 }
 html, body {
     height: 100%;
@@ -43,7 +44,6 @@ html, body {
     width: 90%;
     max-width: 512px;
     margin: 0 auto;
-
 }
 .main {
     height: calc(100% - 100px);
@@ -73,12 +73,22 @@ html, body {
 }
 #title {
     margin: 10px 0;
+}
+.title {
     color: #555;
     font-weight: 600;
+    text-decoration: none;
 }
-#by {
+.by {
     color: #777;
     font-size: 12px;
+    text-decoration: none;
+}
+.title:hover {
+    color: #333;
+}
+.by:hover {
+    color: #333;
 }
 .get-started {
     background-color: #fff;
