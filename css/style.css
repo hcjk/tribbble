@@ -14,13 +14,13 @@ html, body {
 .home-page {
     height: 100%;
     width: 100%;
-    background-image: url(../imgs/background.jpeg);
-    background-size: cover;
+    /*background-image: url(../imgs/background.jpeg);
+    background-size: cover;*/
 }
 .cover {
     height: 100%;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: #333;
 }
 .nav-home {
     color: #fff;
