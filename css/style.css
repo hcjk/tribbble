@@ -14,8 +14,6 @@ html, body {
 .home-page {
     height: 100%;
     width: 100%;
-    /*background-image: url(../imgs/background.jpeg);
-    background-size: cover;*/
 }
 .cover {
     height: 100%;
@@ -74,6 +72,12 @@ html, body {
 #title {
     margin: 10px 0;
 }
+#hidden {
+    display: none;
+    font-size: 1.5em;
+    color: #555;
+    font-weight: 600;
+}
 .title {
     color: #555;
     font-weight: 600;
@@ -100,4 +104,19 @@ html, body {
     padding: 15px 0;
     border-radius: 4px;
     margin: 10px auto;
+}
+.choose {
+    padding-top: 25px;
+    text-align: center;
+    font-size: 3em;
+}
+.choose .fa {
+    padding: 0 25px;
+    cursor: pointer;
+}
+.fa-close {
+    color: #e74c3c;
+}
+.fa-check {
+    color: #2ecc71;
 }
