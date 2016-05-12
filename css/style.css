@@ -10,6 +10,11 @@ html, body {
     background-color: #eee;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    font-family: "proxima-nova-soft";
+}
+img {
+  width: auto;
+  height: auto;
 }
 .home-page {
     height: 100%;
@@ -18,10 +23,10 @@ html, body {
 .cover {
     height: 100%;
     width: 100%;
-    background-color: #333;
+    background-color: #fff;
 }
 .nav-home {
-    color: #fff;
+    color: #333;
     width: 90%;
     max-width: 512px;
     margin: 0 auto;
@@ -47,12 +52,13 @@ html, body {
     height: calc(100% - 100px);
     margin-top: -50px;
     display: flex;
-    flex-direction: column;
+    flex-flow: row wrap;
     justify-content: center;
     text-align: center;
 }
-.main h1 {
-    color: #fff;
+.main img {
+  width: 200px;
+
 }
 .main-page {
     margin: 50px 0;
@@ -96,14 +102,32 @@ html, body {
 }
 .get-started {
     background-color: #fff;
-    color: #333;
+    color: #375a7c;
+    border: 3px solid #375a7c;
+    height: 20px;
     width: auto;
     width: 200px;
     text-decoration: none;
     font-weight: 700;
-    padding: 15px 0;
-    border-radius: 4px;
-    margin: 10px auto;
+    padding: 15px 5px;
+    border-radius: 40px;
+    margin: -20px 0 0 -20px;
+    box-shadow: 10px 10px 0 #375a7c;
+}
+.get-started:hover {
+  margin: 0;
+  background-color: #375a7c;
+  color: #fff;
+  box-shadow: none;
+}
+.logo {
+  border: 1px solid #333;
+  margin-top: 5%;
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .choose {
     padding-top: 25px;
