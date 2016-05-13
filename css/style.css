@@ -49,16 +49,14 @@ img {
     margin: 0 auto;
 }
 .main {
-    height: calc(100% - 100px);
     margin-top: -50px;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
     text-align: center;
 }
-.main img {
-  width: 200px;
-
+.logo img {
+  height: 100%;
+  width: auto;
+  left: 0;
+  right: 0;
 }
 .main-page {
     margin: 50px 0;
@@ -100,34 +98,37 @@ img {
 .by:hover {
     color: #333;
 }
+.txt-ctr {
+  width: 100%;
+  margin-top: 50px;
+}
+.txt {
+  width: 100%;
+  font-size: 30px;
+  font-weight: bolder;
+  margin-bottom: 80px;
+}
 .get-started {
     background-color: #fff;
-    color: #375a7c;
-    border: 3px solid #375a7c;
+    color: #293949;
+    border: 4px solid #293949;
     height: 20px;
-    width: auto;
-    width: 200px;
     text-decoration: none;
     font-weight: 700;
-    padding: 15px 5px;
+    padding: 15px 40px;
     border-radius: 40px;
-    margin: -20px 0 0 -20px;
-    box-shadow: 10px 10px 0 #375a7c;
+    box-shadow: 10px 10px 0 #293949;
 }
 .get-started:hover {
-  margin: 0;
-  background-color: #375a7c;
+  background-color: #293949;
   color: #fff;
   box-shadow: none;
 }
 .logo {
-  border: 1px solid #333;
-  margin-top: 5%;
+  max-height: 500px;
+  margin-top: 7%;
   width: 100%;
-  height: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  height: 60vh;
 }
 .choose {
     padding-top: 25px;
