@@ -33,7 +33,7 @@ img {
 .nav-home {
     color: #333;
     width: 90%;
-    max-width: 1024px;
+    max-width: 800px;
     margin: 0 auto;
     font-weight: 600;
     font-size: 25px;
@@ -68,9 +68,6 @@ img {
     height: 3px;
     background-color: #293949;
 }
-.nav-right a:hover {
-
-}
 .nav-other {
     padding: 25px 0;
     background-color: #fff;
@@ -87,7 +84,7 @@ img {
     text-align: center;
 }
 .logo img {
-  max-width: 65%;
+  max-width: 55%;
   height: auto;
   max-height: 500px;
   left: 0;
@@ -159,7 +156,7 @@ img {
 }
 .logo {
   max-height: 500px;
-  padding: 7% 0 10% 0;
+  padding: 120px 0 30px 0;
   width: 100%;
 }
 .choose {
@@ -182,6 +179,21 @@ img {
     padding: 10% 0;
   }
   .logo img {
-    width: 70%;
+    width: 100%;
+  }
+  .txt {
+    font-size: 20px;
+  }
+  .nav-home {
+    display: flex;
+    justify-content: space-around;
+  }
+  .nav-right a {
+    font-size: 20px;
+    padding: 0 10px;
+  }
+  .nav-home img {
+    margin-top: -5px;
+    max-height: 30px;
   }
 }
