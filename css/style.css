@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    transition: all .3s ease;
+    transition: all 1s ease;
 }
 html, body {
     height: 100%;
@@ -11,6 +11,12 @@ html, body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-family: "proxima-nova-soft";
+}
+body {
+    -webkit-transition: .6s ease;
+    -moz-transition: .6s ease;
+    -ms-transition: .6s ease;
+    -o-transition: .6s ease;
 }
 a {
   text-decoration: none;
@@ -69,15 +75,22 @@ img {
     background-color: #293949;
 }
 .nav-other {
-    padding: 25px 0;
     background-color: #fff;
     box-shadow: 0px 5px 20px rgba(0, 0, 0, .1);
     font-size: 25px;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .inside-nav {
-    width: 90%;
-    max-width: 512px;
-    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    height: 50%;
+    
+}
+#headerLogo {
+  height: 100%;
 }
 .main {
     margin-top: -50px;
@@ -91,7 +104,16 @@ img {
   right: 0;
 }
 .main-page {
-    margin: 50px 0;
+    height: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.passClick {
+  background-color: #e74c3c;
+}
+.nextClick {
+  background-color: #2ecc71;
 }
 .box {
     width: calc(90% - 96px);
