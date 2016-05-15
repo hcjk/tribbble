@@ -43,7 +43,7 @@
 
         <script>
           $(function() {
-            $(document).keydown(function() {
+            $(document).keydown(function(e) {
               switch(e.which) {
                 case 39:
                   $("#next").trigger("click")
