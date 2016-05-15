@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <title>Tribbble</title>
         <script src="https://use.fontawesome.com/eb7c75f495.js"></script>
-        <link rel="stylesheet" href="/css/style.css">
+        <link rel="stylesheet" href="./css/style.css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="Tinder for Dribbble">
     </head>
@@ -22,8 +22,8 @@
                     <small id="by"></small>
                     <br>
                     <div class="choose">
-                        <i class="fa fa-close action" id="pass"></i>
-                        <i class="fa fa-check action" id="next"></i>
+                      <i class="fa fa-close action" id="pass"></i>
+                      <i class="fa fa-check action" id="next"></i>
                     </div>
                 </div>
                 <div id="hidden">
@@ -40,5 +40,20 @@
                 Typekit.load({async: true});
             } catch (e) {}
         </script>
+
+        <script>
+          $(function() {
+            $(document).keydown(function(e) {
+              switch(e.which) {
+                case 39:
+                  $("#next").trigger("click")
+                case 37:
+                  $("#pass").trigger("click")
+                break;
+              }
+            })
+          })
+        </script>
+
     </body>
 </html>
