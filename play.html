@@ -11,7 +11,7 @@
     <body>
         <nav class="nav-other">
             <div class="inside-nav">
-                Tribbble
+              <img src="./img/tribbble.png" id="headerLogo">
             </div>
         </nav>
         <div class="main-page">
@@ -22,12 +22,12 @@
                     <small id="by"></small>
                     <br>
                     <div class="choose">
-                      <i class="fa fa-close action" id="pass"></i>
-                      <i class="fa fa-check action" id="next"></i>
+                      <i class="fa fa-close action btn" id="pass" value="red"></i>
+                      <i class="fa fa-check action btn" id="next" value="green"></i>
                     </div>
                 </div>
                 <div id="hidden">
-                    There's no more images to show!
+                    There are no more images to show!
                 </div>
             </div>
         </div>
@@ -46,13 +46,31 @@
             $(document).keydown(function(e) {
               switch(e.which) {
                 case 39:
-                  $("#next").trigger("click")
+                  $("#next").trigger("click");
+                  break;
                 case 37:
-                  $("#pass").trigger("click")
-                break;
+                  $("#pass").trigger("click");
+                	break;
               }
-            })
-          })
+            });
+          });
+        </script>
+
+        <script>
+
+        $('#pass').click(function () {
+        	$('.main-page').addClass('passClick');
+      		setTimeout(function () {
+      			$('.main-page').removeClass('passClick');
+      		}, 1000);
+        });
+
+        $('#next').click(function () {
+        	$('.main-page').addClass('nextClick');
+        	setTimeout(function () {
+        		$('.main-page').removeClass('nextClick');
+        	}, 1000);
+        });
         </script>
 
     </body>
