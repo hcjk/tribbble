@@ -11,19 +11,19 @@
     <body>
         <nav class="nav-other">
             <div class="inside-nav">
-              <img src="./img/tribbble.png" id="headerLogo">
+                <img src="./img/tribbble.png" id="headerLogo">
             </div>
         </nav>
         <div class="main-page">
             <div class="box">
                 <div id="maybe-hidden">
-                    <img src="" alt="" id="shot-img" />
+                    <img src="" alt="" id="shot-img"/>
                     <h3 id="title"></h3>
                     <small id="by"></small>
                     <br>
                     <div class="choose">
-                      <i class="fa fa-close action btn" id="pass" value="red"></i>
-                      <i class="fa fa-check action btn" id="next" value="green"></i>
+                        <i class="fa fa-close action btn" id="pass" value="red"></i>
+                        <i class="fa fa-check action btn" id="next" value="green"></i>
                     </div>
                 </div>
                 <div id="hidden">
@@ -42,36 +42,31 @@
         </script>
 
         <script>
-          $(function() {
-            $(document).keydown(function(e) {
-              switch(e.which) {
-                case 39:
-                  $("#next").trigger("click");
-                  break;
-                case 37:
-                  $("#pass").trigger("click");
-                	break;
-              }
+            $(function() {
+                $(document).keydown(function(e) {
+                    switch (e.which) {
+                        case 39:
+                            $("#next").trigger("click");
+                            break;
+                        case 37:
+                            $("#pass").trigger("click");
+                            break;
+                    }
+                });
+                $('#pass').click(function() {
+                    $('.main-page').addClass('passClick');
+                    setTimeout(function() {
+                        $('.main-page').removeClass('passClick');
+                    }, 1000);
+                });
+
+                $('#next').click(function() {
+                    $('.main-page').addClass('nextClick');
+                    setTimeout(function() {
+                        $('.main-page').removeClass('nextClick');
+                    }, 1000);
+                });
             });
-          });
         </script>
-
-        <script>
-
-        $('#pass').click(function () {
-        	$('.main-page').addClass('passClick');
-      		setTimeout(function () {
-      			$('.main-page').removeClass('passClick');
-      		}, 1000);
-        });
-
-        $('#next').click(function () {
-        	$('.main-page').addClass('nextClick');
-        	setTimeout(function () {
-        		$('.main-page').removeClass('nextClick');
-        	}, 1000);
-        });
-        </script>
-
     </body>
 </html>
