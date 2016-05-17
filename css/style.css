@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    transition: all 1s ease;
+    transition: all .5s ease-in-out;
 }
 html, body {
     height: 100%;
@@ -87,7 +87,6 @@ img {
     width: 100%;
     text-align: center;
     height: 50%;
-    
 }
 #headerLogo {
   height: 100%;
@@ -117,7 +116,7 @@ img {
 }
 .box {
     width: calc(90% - 96px);
-    max-width: calc(512px - 96px);
+    max-width: 416px;
     margin: 0 auto;
     padding: 48px;
     background-color: #fff;
@@ -195,6 +194,14 @@ img {
 }
 .fa-check {
     color: #2ecc71;
+}
+.yesno {
+  position: absolute;
+  max-height: 150px;
+  max-width: 150px;
+  margin: 81px 0 0 133px;
+  opacity: 0;
+  filter: alpha(opacity=40); /* fallback for older browsers */
 }
 @media screen and (max-width: 800px) {
   .logo {

@@ -17,6 +17,8 @@
         <div class="main-page">
             <div class="box">
                 <div id="maybe-hidden">
+                  <img class='yesno' id='yes' src='../img/yes.png'>
+                  <img class='yesno' id='no' src='../img/no.png'>
                     <img src="" alt="" id="shot-img" />
                     <h3 id="title"></h3>
                     <small id="by"></small>
@@ -60,16 +62,20 @@
 
         $('#pass').click(function () {
         	$('.main-page').addClass('passClick');
+          $('#no').fadeTo(50, 1);
       		setTimeout(function () {
       			$('.main-page').removeClass('passClick');
-      		}, 1000);
+            $('#no').fadeTo(50, 0);
+      		}, 500);
         });
 
         $('#next').click(function () {
         	$('.main-page').addClass('nextClick');
+          $('#yes').fadeTo(50, 1);
         	setTimeout(function () {
         		$('.main-page').removeClass('nextClick');
-        	}, 1000);
+            $('#yes').fadeTo(50, 0);
+        	}, 500);
         });
         </script>
 
