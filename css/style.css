@@ -19,13 +19,13 @@ body {
     -o-transition: .6s ease;
 }
 a {
-  text-decoration: none;
-  color: #293949;
-  cursor: pointer;
+    text-decoration: none;
+    color: #293949;
+    cursor: pointer;
 }
 img {
-  width: auto;
-  height: auto;
+    width: auto;
+    height: auto;
 }
 .home-page {
     height: 100%;
@@ -47,19 +47,19 @@ img {
     padding-top: 30px;
 }
 .nav-home img {
-  max-width: 40px;
-  height: auto;
-  float: left;
+    max-width: 40px;
+    height: auto;
+    float: left;
 }
 .nav-right {
-  display: table;
-  table-layout: fixed;
-  float: right;
+    display: table;
+    table-layout: fixed;
+    float: right;
 }
 .nav-right a {
-  display: table-cell;
-  padding: 0 15px;
-  position: relative;
+    display: table-cell;
+    padding: 0 15px;
+    position: relative;
 }
 .nav-right a:before {
     content: "";
@@ -69,7 +69,6 @@ img {
     height: 0;
     transition: all 0.2s ease;
 }
-
 .nav-right a:hover:before {
     height: 3px;
     background-color: #293949;
@@ -89,35 +88,34 @@ img {
     height: 50%;
 }
 #headerLogo {
-  height: 100%;
+    height: 100%;
 }
 .main {
     margin-top: -50px;
     text-align: center;
 }
 .logo img {
-  max-width: 55%;
-  height: auto;
-  max-height: 500px;
-  left: 0;
-  right: 0;
+    max-width: 55%;
+    height: auto;
+    max-height: 500px;
+    left: 0;
+    right: 0;
 }
 .main-page {
-    height: 85%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .passClick {
-  background-color: #e74c3c;
+    background-color: #e74c3c;
 }
 .nextClick {
-  background-color: #2ecc71;
+    background-color: #2ecc71;
 }
 .box {
     width: calc(90% - 96px);
     max-width: 416px;
-    margin: 0 auto;
+    margin: 50px auto;
     padding: 48px;
     background-color: #fff;
     border-radius: 4px;
@@ -152,13 +150,13 @@ img {
     color: #333;
 }
 .txt-ctr {
-  width: 100%;
+    width: 100%;
 }
 .txt {
-  width: 100%;
-  font-size: 30px;
-  font-weight: bolder;
-  margin-bottom: 80px;
+    width: 100%;
+    font-size: 30px;
+    font-weight: bolder;
+    margin-bottom: 80px;
 }
 .get-started {
     margin-top: 40px;
@@ -171,14 +169,14 @@ img {
     box-shadow: 10px 10px 0 #293949;
 }
 .get-started:hover {
-  background-color: #293949;
-  color: #fff;
-  box-shadow: none;
+    background-color: #293949;
+    color: #fff;
+    box-shadow: none;
 }
 .logo {
-  max-height: 500px;
-  padding: 120px 0 30px 0;
-  width: 100%;
+    max-height: 500px;
+    padding: 120px 0 30px 0;
+    width: 100%;
 }
 .choose {
     padding-top: 25px;
@@ -204,25 +202,25 @@ img {
   filter: alpha(opacity=40); /* fallback for older browsers */
 }
 @media screen and (max-width: 800px) {
-  .logo {
-    padding: 10% 0;
-  }
-  .logo img {
-    width: 100%;
-  }
-  .txt {
-    font-size: 20px;
-  }
-  .nav-home {
-    display: flex;
-    justify-content: space-around;
-  }
-  .nav-right a {
-    font-size: 20px;
-    padding: 0 10px;
-  }
-  .nav-home img {
-    margin-top: -5px;
-    max-height: 30px;
-  }
+    .logo {
+        padding: 10% 0;
+    }
+    .logo img {
+        width: 100%;
+    }
+    .txt {
+        font-size: 20px;
+    }
+    .nav-home {
+        display: flex;
+        justify-content: space-around;
+    }
+    .nav-right a {
+        font-size: 20px;
+        padding: 0 10px;
+    }
+    .nav-home img {
+        margin-top: -5px;
+        max-height: 30px;
+    }
 }
