@@ -14,7 +14,8 @@ function error(err) {
 $.jribbble.setToken('81840dbdbadc6f1e3e5abc584966342b9904b3bb4221a71eb27dad7980b055ae');
 
 $.jribbble.shots({
-    'per_page': 50    
+    'per_page': 50,
+    'timeframe': 'day'
 }).then(success, error);
 
 $('.action').click(function() {
