@@ -57,19 +57,19 @@
                 });
         $('#pass').click(function () {
         	$('.main-page').addClass('passClick');
-          $('#no').fadeTo(50, 1);
+          $('#no').fadeTo(20, 1);
       		setTimeout(function () {
       			$('.main-page').removeClass('passClick');
-            $('#no').fadeTo(50, 0);
+            $('#no').fadeTo(20, 0);
       		}, 500);
         });
 
         $('#next').click(function () {
         	$('.main-page').addClass('nextClick');
-          $('#yes').fadeTo(50, 1);
+          $('#yes').fadeTo(20, 1);
         	setTimeout(function () {
         		$('.main-page').removeClass('nextClick');
-            $('#yes').fadeTo(50, 0);
+            $('#yes').fadeTo(20, 0);
         	}, 500);
         });
       });

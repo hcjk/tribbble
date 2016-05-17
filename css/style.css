@@ -59,17 +59,22 @@ img {
 .nav-right a {
     display: table-cell;
     padding: 0 15px;
-    position: relative;
 }
-.nav-right a:before {
+.underline, .nav-right a {
+  position: relative;
+}
+.underline:before {
     content: "";
     position: absolute;
-    width: calc(100% - 30px);
     margin-top: 50px;
     height: 0;
+    width: 100%;
     transition: all 0.2s ease;
 }
-.nav-right a:hover:before {
+.nav-right a:before {
+  width: calc(100% - 30px);
+}
+.underline:hover:before {
     height: 3px;
     background-color: #293949;
 }
@@ -101,10 +106,21 @@ img {
     left: 0;
     right: 0;
 }
-.main-page {
+.main-page, #center {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.main-page {
+}
+#center {
+  width: 100vw;
+  height: calc(100vh - 85px);
+}
+.central {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 70px;
 }
 .passClick {
     background-color: #e74c3c;

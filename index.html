@@ -10,24 +10,34 @@
     <body>
         <div class="home-page">
                 <nav class="nav-home">
-                    <a href='/'><img src='img/tribbble.png'></a>
+                    <a id='home'><img src='img/tribbble.png'></a>
                     <div class='nav-right'>
-                      <a>About</a>
-                      <a>Contact</a>
-                      <a>Help</a>
+                      <a class='underline' id='about'>About</a>
+                      <a class='underline' id='contact'>Contact</a>
+                      <a class='underline' id='help'>Help</a>
                     </div>
                 </nav>
-                <div class="main">
-                  <div class='logo'>
-                    <img src='img/tribbble-logo.png'></img>
-                  </div>
-                  <div class='txt-ctr'>
-                    <p class='txt'>Tinder for Dribbble.</p>
-                    <a href="./play.html" class="get-started">Get Started</a>
-                  </div>
-                </div>
+                <div class="main"></div>
         </div>
         <script src="https://use.typekit.net/vlx4tay.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+        <!-- <script type='text/javascript' src='js/index.js'></script> -->
+        <script>
+        $(document).ready(function() {
+            var page = location.search.substring(1, 2000);
+            if (page) {
+                $('.main').load('../partials/' + page + '.html');
+            } else {
+                $('.main').load('../partials/home.html');
+            }
+
+            $('.nav-home a').click(function () {
+                id = this.id;
+                $('.main').load('/partials/' + id + '.html').hide().fadeIn();
+                window.history.pushState("string", "Title", "/?" + id);
+            });
+        });
+        </script>
         <script>
             try {
                 Typekit.load({async: true});
