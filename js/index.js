@@ -13,7 +13,9 @@ function error(err) {
 };
 $.jribbble.setToken('81840dbdbadc6f1e3e5abc584966342b9904b3bb4221a71eb27dad7980b055ae');
 
-$.jribbble.shots().then(success, error);
+$.jribbble.shots({
+    'per_page': 36    
+}).then(success, error);
 
 $('.action').click(function() {
     var isPass = ($(this).attr("id") == 'pass');
